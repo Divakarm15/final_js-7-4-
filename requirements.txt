@@ -1,0 +1,46 @@
+# JS Scout Pro v10 — Requirements (Burp Automation Edition)
+# Install: pip install -r requirements.txt
+# Linux browser mode: apt install chromium chromium-driver
+# Burp Suite: Install Burp Suite Professional (required for automation)
+
+# ── Core HTTP ──────────────────────────────────────────────────────────────────
+requests>=2.31.0
+urllib3>=2.0.0
+
+# ── Browser automation (optional — needed for XSS confirmation) ───────────────
+selenium>=4.0.0
+webdriver-manager>=4.0.0
+
+# ── Web UI ─────────────────────────────────────────────────────────────────────
+flask>=3.0.0
+
+# ── Burp Suite Automation Dependencies ────────────────────────────────────────
+# Note: Burp Suite Professional must be installed separately
+# Download from: https://portswigger.net/burp
+
+# ── Advanced Analysis ───────────────────────────────────────────────────────────
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# ── Data Processing ───────────────────────────────────────────────────────────
+numpy>=1.24.0
+pandas>=2.0.0
+
+# ── Security & Cryptography ────────────────────────────────────────────────────
+cryptography>=41.0.0
+pyjwt>=2.8.0
+
+# ── Report Generation ──────────────────────────────────────────────────────────
+jinja2>=3.1.0
+matplotlib>=3.7.0
+plotly>=5.15.0
+
+# ── Development & Testing ───────────────────────────────────────────────────────
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# ── Standard library (no install needed) ──────────────────────────────────────
+# re, sys, os, json, time, hashlib, argparse, threading, pathlib, socket
+# queue, collections, concurrent.futures, urllib.parse, html.parser
+# base64, hmac, random, string, statistics, logging, zipfile, uuid, datetime
+# subprocess, csv, ipaddress
